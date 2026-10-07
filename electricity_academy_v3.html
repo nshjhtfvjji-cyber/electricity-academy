@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>⚡ آکادمی برق</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#07111f;color:#edf7ff;font-family:Tahoma,Arial,sans-serif;line-height:1.9}
+header{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.96);border-bottom:1px solid #1b3952}
+nav{max-width:1150px;margin:auto;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.logo{font-size:22px;font-weight:bold;color:#5ee7ff}nav a{color:#dcecff;text-decoration:none;margin:4px 7px;font-size:13px}
+.container{max-width:1150px;margin:auto;padding:28px 16px}
+.hero{text-align:center;padding:70px 16px 55px;background:radial-gradient(circle at 50% 0,#12314a 0,#07111f 55%)}
+.badge{display:inline-block;padding:3px 14px;border:1px solid #26718a;border-radius:30px;color:#71ebff;background:#0c2536}
+h1{font-size:42px;margin:15px 0 5px}h2{color:#6deaff;font-size:27px;margin-top:5px}h3{color:#9aefff}
+.hero p{max-width:750px;margin:0 auto 22px;color:#b8cada}
+.btn{display:inline-block;border:0;border-radius:11px;padding:10px 17px;margin:5px;background:#17b9d5;color:#00131b;font-weight:bold;cursor:pointer}
+.btn.secondary{background:#172d43;color:#fff;border:1px solid #31536d}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:#0c1b2b;border:1px solid #1a3a55;border-radius:17px;padding:18px;box-shadow:0 8px 25px #0004}
+input,select,textarea{width:100%;padding:11px;margin:5px 0;border-radius:9px;border:1px solid #31536d;background:#071522;color:#fff;font-size:15px}
+.result{background:#102e3d;border-radius:10px;padding:11px;margin-top:10px;color:#a5f5ff}
+.small{font-size:13px;color:#9bb0c2}.price{font-size:31px;color:#ffe27a;font-weight:bold}
+table{width:100%;border-collapse:collapse;background:#0a1827}th,td{padding:9px;border:1px solid #24445d;text-align:center}
+th{color:#7ceaff}.note{border-right:4px solid #18bfdc;padding:10px 14px;background:#0b2030}
+footer{text-align:center;border-top:1px solid #19364d;padding:30px;color:#8499ad}
+.hidden{display:none}.success{color:#7df0a3}.danger{color:#ffcb76}
+@media(max-width:650px){h1{font-size:31px}nav{justify-content:center}.logo{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<header><nav>
+<div class="logo">⚡ آکادمی برق</div>
+<div>
+<a href="#learn">آموزش</a><a href="#calc">محاسبه‌گرها</a><a href="#color">کد رنگ</a><a href="#ask">پرسش</a><a href="#support">پشتیبانی</a>
+</div>
+</nav></header>
+
+<section class="hero">
+<span class="badge">آموزش برق برای همه</span>
+<h1>برق را ساده و کاربردی یاد بگیر ⚡</h1>
+<p>آموزش مفاهیم پایه، قانون اهم، توان، مقاومت‌های سری و موازی، کد رنگ مقاومت و ابزارهای محاسباتی.</p>
+<a class="btn" href="#learn">شروع یادگیری</a><a class="btn secondary" href="#calc">محاسبه‌گرها</a>
+</section>
+
+<section id="learn" class="container">
+<h2>📚 آموزش مفاهیم برق</h2>
+<div class="grid">
+<div class="card"><h3>🔋 ولتاژ</h3><p>ولتاژ اختلاف پتانسیل الکتریکی است و واحد آن ولت (V) است.</p></div>
+<div class="card"><h3>〰️ جریان</h3><p>جریان مقدار عبور بار الکتریکی است و با آمپر (A) بیان می‌شود.</p></div>
+<div class="card"><h3>🧱 مقاومت</h3><p>مقاومت میزان مخالفت با عبور جریان است و واحد آن اهم (Ω) است.</p></div>
+<div class="card"><h3>⚡ توان</h3><p>توان نرخ مصرف انرژی الکتریکی است و واحد آن وات (W) است.</p></div>
+<div class="card"><h3>🔌 مدار سری</h3><p>در مدار سری، مقاومت‌ها پشت سر هم قرار می‌گیرند و جریان یکسانی از آن‌ها عبور می‌کند.</p></div>
+<div class="card"><h3>🔀 مدار موازی</h3><p>در مدار موازی، شاخه‌ها مسیرهای جداگانه دارند و ولتاژ دو سر شاخه‌ها برابر است.</p></div>
+<div class="card"><h3>➡️ دیود</h3><p>دیود قطعه‌ای نیمه‌رسانا است که جریان را عمدتاً در یک جهت عبور می‌دهد.</p></div>
+<div class="card"><h3>💡 LED</h3><p>LED یک دیود نوردهنده است که هنگام عبور جریان نور تولید می‌کند.</p></div>
+</div>
+<div class="card" style="margin-top:15px">
+<h3>قانون اهم</h3>
+<p>قانون اهم رابطه بین ولتاژ، جریان و مقاومت را بیان می‌کند. اگر دو مقدار را داشته باشیم، مقدار سوم را می‌توان محاسبه کرد.</p>
+<p class="note">نکته ایمنی: این سایت آموزشی است. کار عملی با برق شهری و مدارهای خطرناک باید توسط فرد متخصص و با رعایت کامل ایمنی انجام شود.</p>
+</div>
+</section>
+
+<section id="calc" class="container">
+<h2>🧮 محاسبه‌گرها</h2>
+<div class="grid">
+<div class="card">
+<h3>قانون اهم</h3>
+<input id="v" type="number" step="any" placeholder="ولتاژ V">
+<input id="i" type="number" step="any" placeholder="جریان I">
+<input id="r" type="number" step="any" placeholder="مقاومت Ω">
+<button class="btn" onclick="limitedCalc(ohm)">محاسبه</button>
+<div id="ohmOut" class="result">دو مقدار را وارد کن.</div>
+</div>
+
+<div class="card">
+<h3>توان الکتریکی</h3>
+<input id="pv" type="number" step="any" placeholder="ولتاژ V">
+<input id="pi" type="number" step="any" placeholder="جریان A">
+<button class="btn" onclick="limitedCalc(power)">محاسبه توان</button>
+<div id="powerOut" class="result">P = V × I</div>
+</div>
+
+<div class="card">
+<h3>مقاومت کل سری</h3>
+<input id="s1" type="number" step="any" placeholder="R1 (Ω)">
+<input id="s2" type="number" step="any" placeholder="R2 (Ω)">
+<input id="s3" type="number" step="any" placeholder="R3 (Ω)">
+<button class="btn" onclick="limitedCalc(series)">محاسبه</button>
+<div id="seriesOut" class="result">Rکل = R1 + R2 + R3</div>
+</div>
+
+<div class="card">
+<h3>مقاومت کل موازی</h3>
+<input id="p1" type="number" step="any" placeholder="R1 (Ω)">
+<input id="p2" type="number" step="any" placeholder="R2 (Ω)">
+<input id="p3" type="number" step="any" placeholder="R3 (Ω)">
+<button class="btn" onclick="limitedCalc(parallel)">محاسبه</button>
+<div id="parallelOut" class="result">مقاومت معادل شاخه‌ها</div>
+</div>
+
+<div class="card">
+<h3>جریان کل از مقاومت کل</h3>
+<input id="tv" type="number" step="any" placeholder="ولتاژ کل V">
+<input id="tr" type="number" step="any" placeholder="مقاومت کل Ω">
+<button class="btn" onclick="limitedCalc(totalCurrent)">محاسبه</button>
+<div id="currentOut" class="result">Iکل = Vکل ÷ Rکل</div>
+</div>
+</div>
+</section>
+
+<section id="color" class="container">
+<h2>🎨 محاسبه مقاومت از روی رنگ</h2>
+<div class="card">
+<p>رنگ نوارهای مقاومت را به ترتیب وارد کن. این ابزار برای مقاومت‌های ۴ نواره طراحی شده است.</p>
+<div class="grid">
+<div><label>نوار اول</label><select id="c1"></select></div>
+<div><label>نوار دوم</label><select id="c2"></select></div>
+<div><label>ضریب (نوار سوم)</label><select id="cm"></select></div>
+<div><label>تلورانس (نوار چهارم)</label><select id="ct"></select></div>
+</div>
+<button class="btn" onclick="limitedCalc(colorResistor)">محاسبه مقاومت</button>
+<div id="colorOut" class="result">رنگ‌ها را انتخاب کن.</div>
+<table><tr><th>رنگ</th><th>رقم</th><th>ضریب</th><th>تلورانس</th></tr>
+<tr><td>سیاه</td><td>0</td><td>×1</td><td>—</td></tr>
+<tr><td>قهوه‌ای</td><td>1</td><td>×10</td><td>±1%</td></tr>
+<tr><td>قرمز</td><td>2</td><td>×100</td><td>±2%</td></tr>
+<tr><td>نارنجی</td><td>3</td><td>×1k</td><td>—</td></tr>
+<tr><td>زرد</td><td>4</td><td>×10k</td><td>—</td></tr>
+<tr><td>سبز</td><td>5</td><td>×100k</td><td>±0.5%</td></tr>
+<tr><td>آبی</td><td>6</td><td>×1M</td><td>±0.25%</td></tr>
+<tr><td>بنفش</td><td>7</td><td>×10M</td><td>±0.1%</td></tr>
+<tr><td>خاکستری</td><td>8</td><td>×100M</td><td>±0.05%</td></tr>
+<tr><td>سفید</td><td>9</td><td>×1G</td><td>—</td></tr>
+</table>
+</div>
+</section>
+
+<section id="access" class="container">
+<h2>🔐 سطح دسترسی</h2>
+<div class="grid">
+<div class="card">
+<h3>🆓 دسترسی رایگان</h3>
+<p>برای آشنایی اولیه، بخشی از مطالب و فقط <b>۲ محاسبه</b> در اختیار شماست.</p>
+<p class="small">پس از استفاده از دو محاسبه، محاسبه‌گرهای کامل قفل می‌شوند.</p>
+</div>
+<div class="card">
+<h3>⭐ اشتراک کامل</h3>
+<p>با خرید اشتراک، تمام آموزش‌ها و محاسبه‌گرها بدون محدودیت در دسترس قرار می‌گیرند.</p>
+<p><b>۱۰٬۰۰۰ تومان / ۱ ماه</b></p>
+</div>
+</div>
+</section>
+
+<section id="ask" class="container">
+<h2>💬 پرسش از آکادمی</h2>
+<div class="card">
+<p id="status" class="success">🆓 شما ۲ استفاده رایگان از محاسبه‌گرها دارید.</p>
+<p class="small">پرسش و پاسخ پیشرفته و محتوای کامل می‌تواند در نسخه اشتراکی ارائه شود.</p>
+</div>
+</section>
+
+<section class="container">
+<h2>⭐ اشتراک</h2>
+<div class="card" style="text-align:center">
+<p>برای دسترسی نامحدود به تمام مطالب و محاسبه‌گرها، اشتراک کامل یک‌ماهه تهیه کنید.</p>
+<div class="price">۱۰٬۰۰۰ تومان <span class="small">/ یک ماه</span></div>
+<button class="btn" onclick="subscribe()">فعال‌سازی اشتراک</button>
+<p class="small">این نسخه نمونه است؛ پرداخت واقعی باید با درگاه معتبر و تأیید پرداخت در سرور انجام شود.</p>
+</div>
+</section>
+
+<section id="support" class="container">
+<h2>🛠️ پشتیبانی</h2>
+<div class="card">
+<h3>راه ارتباطی با سازنده</h3>
+<p>📧 ایمیل: <a style="color:#71eaff" href="mailto:nshjhtfvjji@gmail.com">nshjhtfvjji@gmail.com</a></p>
+<p>🕐 زمان پاسخ‌گویی: <b>همه روزها به‌جز جمعه</b></p>
+<p class="small">پیام‌های پشتیبانی را از طریق ایمیل ارسال کنید. زمان پاسخ ممکن است با توجه به تعداد پیام‌ها متفاوت باشد.</p>
+</div>
+</section>
+
+<footer>⚡ آکادمی برق — سایت آموزشی</footer>
+
+<script>
+const colors=[
+["سیاه",0,1,"—"],["قهوه‌ای",1,10,"±1%"],["قرمز",2,100,"±2%"],
+["نارنجی",3,1000,"—"],["زرد",4,10000,"—"],["سبز",5,100000,"±0.5%"],
+["آبی",6,1000000,"±0.25%"],["بنفش",7,10000000,"±0.1%"],
+["خاکستری",8,100000000,"±0.05%"],["سفید",9,1000000000,"—"]
+];
+function fillSelect(id,arr){let s=document.getElementById(id);arr.forEach((x,n)=>{let o=document.createElement("option");o.value=n;o.textContent=x[0];s.appendChild(o)})}
+fillSelect("c1",colors);fillSelect("c2",colors);fillSelect("cm",colors);
+let tol=[["قهوه‌ای","±1%"],["قرمز","±2%"],["سبز","±0.5%"],["آبی","±0.25%"],["بنفش","±0.1%"],["خاکستری","±0.05%"]];
+let ts=document.getElementById("ct");tol.forEach((x,n)=>{let o=document.createElement("option");o.value=n;o.textContent=x[0]+" ("+x[1]+")";ts.appendChild(o)});
+
+function fmt(n){return n>=1000000000?(n/1e9).toFixed(2)+" GΩ":n>=1e6?(n/1e6).toFixed(2)+" MΩ":n>=1000?(n/1000).toFixed(2)+" kΩ":n.toFixed(2)+" Ω"}
+function ohm(){
+ let V=parseFloat(v.value),I=parseFloat(i.value),R=parseFloat(r.value),m="";
+ if(isNaN(V)&&!isNaN(I)&&!isNaN(R))m="V = "+(I*R).toFixed(3)+" V";
+ else if(!isNaN(V)&&isNaN(I)&&!isNaN(R)&&R!==0)m="I = "+(V/R).toFixed(3)+" A";
+ else if(!isNaN(V)&&!isNaN(I)&&isNaN(R)&&I!==0)m="R = "+(V/I).toFixed(3)+" Ω";
+ else m="لطفاً دقیقاً دو مقدار معتبر وارد کن.";
+ ohmOut.textContent=m;
+}
+function power(){let V=parseFloat(pv.value),I=parseFloat(pi.value);powerOut.textContent=isNaN(V)||isNaN(I)?"دو مقدار را وارد کن.":"P = "+(V*I).toFixed(3)+" W";}
+function series(){let a=[s1,s2,s3].map(x=>parseFloat(x.value)).filter(x=>!isNaN(x));seriesOut.textContent=a.length<2?"حداقل دو مقاومت وارد کن.":"Rکل = "+a.reduce((x,y)=>x+y,0).toFixed(3)+" Ω";}
+function parallel(){let a=[p1,p2,p3].map(x=>parseFloat(x.value)).filter(x=>!isNaN(x)&&x>0);parallelOut.textContent=a.length<2?"حداقل دو مقاومت مثبت وارد کن.":"Rکل = "+(1/a.reduce((x,y)=>x+1/y,0)).toFixed(3)+" Ω";}
+function totalCurrent(){let V=parseFloat(tv.value),R=parseFloat(tr.value);currentOut.textContent=isNaN(V)||isNaN(R)||R<=0?"ولتاژ و مقاومت معتبر وارد کن.":"Iکل = "+(V/R).toFixed(3)+" A";}
+function colorResistor(){
+ let a=colors[+c1.value][1],b=colors[+c2.value][1],m=colors[+cm.value][2],t=tol[+ct.value][1];
+ colorOut.innerHTML="مقدار مقاومت: <b>"+fmt((a*10+b)*m)+"</b> &nbsp; | &nbsp; تلورانس: <b>"+t+"</b>";
+}
+let freeUses = parseInt(localStorage.getItem("electricityFreeUses") || "0", 10);
+let subUntil = parseInt(localStorage.getItem("electricitySubUntil") || "0", 10);
+
+function hasSubscription(){
+  return Date.now() < subUntil;
+}
+function update(){
+  const remaining=Math.max(0,2-freeUses);
+  status.textContent=hasSubscription()
+    ? "⭐ اشتراک فعال است — دسترسی نامحدود."
+    : "🆓 استفاده رایگان باقی‌مانده: "+remaining+" از ۲";
+}
+function limitedCalc(fn){
+  if(hasSubscription()){
+    fn();
+    return;
+  }
+  if(freeUses>=2){
+    alert("🔒 دو استفاده رایگان شما تمام شده است. برای دسترسی نامحدود، اشتراک ۱ماهه ۱۰٬۰۰۰ تومانی تهیه کنید.");
+    document.getElementById("access").scrollIntoView({behavior:"smooth"});
+    return;
+  }
+  fn();
+  freeUses++;
+  localStorage.setItem("electricityFreeUses",String(freeUses));
+  update();
+  if(freeUses>=2){
+    setTimeout(()=>alert("دو استفاده رایگان شما تمام شد. برای ادامه، اشتراک کامل را فعال کنید."),100);
+  }
+}
+function subscribe(){
+  // Demo activation only. Real payment must be verified server-side.
+  subUntil=Date.now()+30*24*60*60*1000;
+  localStorage.setItem("electricitySubUntil",String(subUntil));
+  update();
+  alert("اشتراک نمونه برای ۳۰ روز فعال شد. در نسخه واقعی، این مرحله باید فقط پس از تأیید پرداخت توسط سرور انجام شود.");
+}
+update();</script>
+</body>
+</html>
